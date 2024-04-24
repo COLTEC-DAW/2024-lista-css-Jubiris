@@ -6,26 +6,31 @@
 html{
     width: 60;
     color:#011963;
-    background-color:#F2F2F2;
+    background-color: #d6e8fd;
+    
 }
 
 .summary{
     text-align: center;
 }
 
+
 h1{
+    background-color: #a4caf7;
     font-size: 1.8rem;
     text-align: center;
     color:#2E4CA6;
 }
 
 h2{
+    background-color: #a4caf7;
     font-size: 1.4rem;
     text-align: center;
     color:#2E4CA6;
 }
 
 h3{
+    background-color: #a4caf7;
     font-size: 1.2rem;
     text-align: center;
     color:#2E4CA6;
@@ -33,6 +38,7 @@ h3{
 
 p{
     text-indent: 1em;
+    text-align: center;
 }
 
 abbr{
