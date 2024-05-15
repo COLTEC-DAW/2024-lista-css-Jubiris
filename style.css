@@ -4,24 +4,33 @@
 
 
 html{
-    width: 80%;
-    max-width: 1280px;
-    color:#011963;
+    max-width: 1280px;  
+}
+
+body{
     background-color: #d6e8fd;
-    
+    color:#011963;
+    width: 80%;
+    height: 50%;
+    font-family: sans-serif;
 }
 
 #design-archives{
     display: none;
+    top:560px;
+    left: 62%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
-aside{
+aside li{
+    text-align: center;
+    margin-bottom: 16;
+}
 
-    ul{
-        text-align: center;
-        list-style-type: none;
-        line-height: 2em;
-    }
+aside ul{
+    list-style-type: none;
+    line-height: 2em;
     
 }
 
@@ -38,9 +47,6 @@ aside{
     text-indent: 1em;
 }
 
-#design-archives{
-    display: none;
-}
 
 .summary{
     color: #a4caf7;
@@ -54,6 +60,8 @@ h1{
     font-size: 1.8rem;
     text-align: center;
     color:#2E4CA6;
+    margin-right: 16;
+    display: inline;
 }
 
 h2{
@@ -61,6 +69,7 @@ h2{
     font-size: 1.4rem;
     text-align: center;
     color:#2E4CA6;
+    text-indent: 2em;
 }
 
 h3{
@@ -68,6 +77,16 @@ h3{
     font-size: 1.2rem;
     text-align: center;
     color:#2E4CA6;
+}
+
+.main p{
+    line-height: 1.8em;
+}
+
+.main p:first-of-type::first-letter{
+    font-size: 48px;
+    font-family:Arial, Helvetica, sans-serif;
+    float: left;
 }
 
 p{
@@ -79,29 +98,30 @@ abbr{
     font-variant: small-caps;
 }
 
-a{
-    color: #7a9bff;
-}
-
 footer{
     margin: 4%;
-    a{
-        border: solid 1px;
-        border-spacing: 0.5em;
-    }
 }
+
+footer a{
+    border-width:1; 
+    border-style:solid;
+    padding:5;
+}
+
 
 #zen-supporting{
     line-height: 1.5;
 }
 .page-wrapper{
     position: relative;
+    max-width: 1280px;
+    margin: 50;
 }
 .explanation{
     width: 60%;
     margin-right: 35%;
-    border-right: solid 1px #000;
-    padding: 2%;
+    border-right: solid 1px #1f295c;
+    padding-right: 2%;
 }
 .design-selection{
     position:absolute;
@@ -112,3 +132,58 @@ footer{
 .intro{
     height: 550px;
 }
+
+a{
+    color:rgb(0, 128, 0);
+    font-weight:700;
+}
+
+a:hover{
+ color:#0957ff
+}
+
+a:link{
+    font-weight: bold;
+}
+
+a:visited{
+    font-weight: normal;
+    color:#ff0000
+}
+
+.menu-item{
+    border-top-style:solid;
+    border-bottom-style:solid;
+}
+
+.main footer a{
+    display:flex;
+    justify-content:center;
+}
+
+.benefits{
+    border-bottom:#0957ff;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.benefits h3{
+    align-self: center;
+    flex: 0 0 30%;
+}
+
+.benefits .text{
+    flex: 0 0 70%;
+}
+
+.participation{
+    display: flex;
+    border-top:#011963;
+}
+.participation > *{
+    flex: 0 0 50%;
+}
+.participation > h3{
+    align-self: center;
+}
+
