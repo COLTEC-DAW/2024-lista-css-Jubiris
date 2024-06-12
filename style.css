@@ -16,6 +16,7 @@ body{
 }
 
 #design-archives{
+    position: absolute;
     display: none;
     top:560px;
     left: 62%;
@@ -25,7 +26,7 @@ body{
 
 aside li{
     text-align: center;
-    margin-bottom: 16;
+    margin-bottom: 16px;
 }
 
 aside ul{
@@ -60,7 +61,7 @@ h1{
     font-size: 1.8rem;
     text-align: center;
     color:#2E4CA6;
-    margin-right: 16;
+    margin-right: 16px;
     display: inline;
 }
 
@@ -80,7 +81,7 @@ h3{
 }
 
 .main p{
-    line-height: 1.8em;
+    line-height: 24px;
 }
 
 .main p:first-of-type::first-letter{
@@ -105,7 +106,7 @@ footer{
 footer a{
     border-width:1; 
     border-style:solid;
-    padding:5;
+    padding:5px;
 }
 
 
@@ -115,7 +116,7 @@ footer a{
 .page-wrapper{
     position: relative;
     max-width: 1280px;
-    margin: 50;
+    margin: 50px;
 }
 .explanation{
     width: 60%;
@@ -129,6 +130,12 @@ footer a{
     left:70%;
     padding:2px;
 }
+
+.design-selection li{
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
 .intro{
     height: 550px;
 }
@@ -156,6 +163,12 @@ a:visited{
     border-bottom-style:solid;
 }
 
+main footer{
+    display: flex;
+    justify-content: center;
+    contain: space;
+}
+
 .main footer a{
     display:flex;
     justify-content:center;
@@ -178,12 +191,31 @@ a:visited{
 
 .participation{
     display: flex;
+    flex-wrap: wrap;
     border-top:#011963;
+    border-top-style: solid;
 }
 .participation > *{
-    flex: 0 0 50%;
+    flex: auto;
+    contain: 50%;
 }
+
 .participation > h3{
     align-self: center;
 }
 
+.benefits{
+    display: flex;
+    border-bottom-style: solid;
+}
+
+.benefits h3{
+ align-self: center;
+ contain: 30%;
+ flex: auto;
+}
+
+.benefits p{
+flex: auto;
+contain: 70%;
+}
